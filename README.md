@@ -1,2 +1,3 @@
 # codam-cpp01
-next step
+Memory allocation, pointers to members,
+references and switch statements
