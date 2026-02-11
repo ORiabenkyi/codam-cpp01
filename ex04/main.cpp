@@ -41,6 +41,9 @@ int main(int count, char *argv[])
         while ((pos = line.find(target, pos)) != std::string::npos)
         {
             line.replace(pos, target.length(), replace);
+            // Avoid infinite loop if replace extends the string
+            if (replace.length() >= target.length())
+                pos += replace.length();
         }
         output << line << std::endl;
     }
