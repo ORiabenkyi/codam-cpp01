@@ -1,7 +1,7 @@
 
 #include "../inc/HumanB.hpp"
 
-HumanB::HumanB() : name("sharp mind"), weapon(nullptr)
+HumanB::HumanB() : name("Megamind"), weapon(nullptr)
 {
     std::cout << "HumanB " << name << " created." << std::endl;
 }

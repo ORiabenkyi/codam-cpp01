@@ -9,10 +9,10 @@ class HumanA {
    private:
     std::string name;
     Weapon* weapon;
+    HumanA();    
 
    public:
-    HumanA();
-    HumanA(std::string name, Weapon* weapon);
+    HumanA(std::string name, Weapon& weapon);
     ~HumanA();
     HumanA(const HumanA &otherHumanA);
     HumanA& operator=(const HumanA &otherHumanA);

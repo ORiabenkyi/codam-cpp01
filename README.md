@@ -5,6 +5,7 @@ references and switch statements
 
 
 Exercise 00: BraiiiiiiinnnzzzZ
+Exercise 01: Moar brainz!
 Exercise 02: HI THIS IS BRAIN
 Exercise 03: Unnecessary violence
 Exercise 04: Sed is for losers

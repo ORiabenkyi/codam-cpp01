@@ -6,8 +6,9 @@ HumanA::HumanA() : name("Code less"), weapon(nullptr)
     std::cout << "Human A " << name << " created." << std::endl;
 }
 
-HumanA::HumanA(std::string name, Weapon* weapon) : name(name), weapon(weapon)
+HumanA::HumanA(std::string name, Weapon& weapon) : name(name)
 {
+    this->weapon = &weapon;
     std::cout << "HumanA " << name << " created." << std::endl;
 }
 

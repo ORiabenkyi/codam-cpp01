@@ -7,18 +7,32 @@ int main()
     std::string humanName = "Bob";
     {
         Weapon club = Weapon("crude spiked club");
-        HumanA bob(humanName, &club);
+        HumanA bob(humanName, club);
         bob.attack();
         club.setType("some other type of club");
         bob.attack();
     }
+    std::cout << "---------------------------------------------" << std::endl;
     {
         Weapon club = Weapon("crude spiked club");
         HumanB jim("Jim");
+        jim.attack();
         jim.setWeapon(club);
         jim.attack();
         club.setType("some other type of club");
         jim.attack();
     }
+    std::cout << "---------------------------------------------" << std::endl;
+    {
+        HumanB jim;
+        jim.attack();
+        Weapon club = Weapon("crude spiked club");
+        jim.setWeapon(club);
+        jim.attack();
+        club.setType("some other type of club");
+        jim.attack();
+    }
+
+
 return 0;
 }
